@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  padding-top: 110px;
+  /* padding-left: 255px; */
+  background-color: #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.footer{
+  height: 20vh;
+  background-color: #3b3b3b;
+}
+
+.path1{
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+.body{
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.body > svg {
+  text-align: center;
+}
+
+.path1-2{
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+  stroke-dasharray: 6083;
+  stroke-dashoffset: 0;
+}
