@@ -1,24 +1,53 @@
 .App {
+  width: 100%;
   text-align: center;
 }
 
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+}
+
 .header {
+  width: 100%;
+  height: 50vw;
   padding-top: 110px;
-  /* padding-left: 255px; */
   background-color: #000;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .footer{
-  height: 20vh;
+  width: 100%;
+  height: 30vh;
   background-color: #3b3b3b;
+  padding: 0px 70px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+.head-svg {
+  /* height: 40vw;  */
+  width: 100%;
+}
+
+.path {
+  width: 100%;
+  fill: none;
+  stroke-width: 3px;
 }
 
 .path1{
-  fill: none;
   stroke: #fff;
-  stroke-width: 3px;
 }
 
 .body{
@@ -30,8 +59,250 @@
   text-align: center;
 }
 
+.airplan-svg {
+  /* height: 60vw;  */
+  width: 100%;
+}
+
+.content1 {
+  width: 100%;
+  height: 55vw;
+}
+
 .path1-2{
-  fill: none;
+  animation: drawPath1 1s linear, floating 2.2s linear infinite;
   stroke: #000;
-  stroke-width: 3px;
+  transition: 0.5s;
+}
+
+.img-box{
+  position: absolute;
+  border: #000 0.5px solid;
+  background-color: gray;
+}
+
+.img1 {
+  width: 12vw;
+  height: 18vw;
+  margin-left: 10%;
+  margin-top: 2rem;
+  transform: rotate(-10deg);
+}
+.img1:hover {
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.img2{
+  width: 25vw;
+  height: 15vw;
+  margin-left: 70%;
+  margin-top: 25%;
+  transform: rotate(5deg);
+}
+
+.img3{
+  width: 25vw;
+  height: 15vw;
+  margin-left: 50%;
+  margin-top: 35%;
+  transform: rotate(-15deg);
+}
+
+.img4 {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 8%;
+  margin-top: 13%;
+}
+
+.img5 {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 23%;
+  margin-top: 23%;
+}
+
+.img-class1:hover > .img-box {
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.img-class2:hover > .img4 {
+  transition: 1s;
+  transform: translate(-20%, 0px);
+}
+
+.img-class2:hover > .img5 {
+  transition: 1s;
+  transform: translate(20%, 0px);
+}
+
+.destination {
+  width: 100px;
+  height: 80px;
+  margin-left: 90%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+
+.content2 {
+  background-color: #3b3b3b;
+  width: 100%;
+  height: 49.5vw;
+}
+
+.destination2 {
+  width: 110px;
+  height: 80px;
+  margin-left: 8%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.destination > .text {
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  text-shadow: 2px 3px 8px #3b3b3b;
+}
+
+.destination2 > .text {
+  width: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  text-shadow: 2px 3px 8px #1a1a1a;
+}
+
+.sky-svg {
+  width: 100%;
+  margin-top: 15%;
+}
+
+.sky-line {
+  stroke: #fff;
+  transition: 0.5s;
+}
+
+.content3 {
+  width: 100%;
+  height: 49.5vw;
+  background-color: #fff;
+}
+
+.chuncheon-svg {
+  width: 100%;
+}
+
+.chuncheon {
+  stroke: #000;
+  transition: 0.5s;
+}
+
+.chuncheon2 {
+  stroke: #000;
+  transition: 0.5s;
+}
+
+@keyframes drawPath1 {
+  0% {
+    stroke-dashoffset: 6884;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes floating {
+  50% {
+    transform: translate3d(0, 40px, 0);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1065px) {
+  .img1 {
+    margin-left: 5rem;
+    margin-top: 2.5rem;
+  }
+
+  .img-class2:hover > .img4 {
+    transition: 1s;
+    transform: translate(-15%, 0px);
+  }
+  
+  .img-class2:hover > .img5 {
+    transition: 1s;
+    transform: translate(15%, 0px);
+  }
+
+  .destination {
+    margin-left: 75vw;
+    margin-top: 3rem;
+  }
+  .destination2 {
+    margin-left: 8vw;
+    margin-top: 5rem;
+  }
+
+  .path {
+    width: 100%;
+    fill: none;
+    stroke-width: 3px;
+    transition: 1s;
+  }
+
+  .path1-2 {
+    transform: 1s;
+  }
+
+  .sky-line {
+    transition: 1s;
+  }
+
+  .chuncheon .chuncheon2 {
+    transition: 1s;
+  }
+} 
+
+@media (max-width: 767px) {
+  .img1 {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+
+  .img-class2:hover > .img4 {
+    transition: 1s;
+    transform: translate(-15%, 0px);
+  }
+  
+  .img-class2:hover > .img5 {
+    transition: 1s;
+    transform: translate(15%, 0px);
+  }
+
+  .destination {
+    margin-left: 65%;
+    margin-top: 8%;
+  }
+
+  .destination > h1 {
+    font-size: 15px;
+  }
+  .destination > h3 {
+    font-size: 8px;
+  }
+
+  .destination2 {
+    margin-left: 0%;
+    margin-top: 6%;
+  }
+
+  .destination2 > h1 {
+    font-size: 15px;
+  }
+
+  .destination2 > h3 {
+    font-size: 8px;
+  }
 }
