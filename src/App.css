@@ -9,6 +9,19 @@
   scrollbar-width: none;
 }
 
+html, body, div, span, applet, object, iframe, h2, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
 body {
   width: 100%;
   padding: 0px;
@@ -17,7 +30,7 @@ body {
 
 .header {
   width: 100%;
-  height: 50vw;
+  /* height: 50vw; */
   padding-top: 110px;
   background-color: #000;
   box-sizing: border-box;
@@ -123,6 +136,48 @@ body {
   margin-top: 23%;
 }
 
+.img6 {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 60%;
+  margin-top: 6%;
+  transform: rotate(-15deg);
+}
+.img7 {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 60%;
+  margin-top: 6%;
+  transform: rotate(15deg);
+}
+.img8 {
+  width: 25vw;
+  height: 15vw;
+  margin-left: 60%;
+  margin-top: 6%;
+  transform: rotate(0deg);
+}
+
+.img-class3:hover > .img-box {
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.img-class3:hover > .img6 {
+  transition: 1s;
+  transform: translate(5%, -10%);
+}
+
+.img-class3:hover > .img7 {
+  transition: 1s;
+  transform: translate(-5%, 80%);
+}
+
+.img-class3:hover > .img8 {
+  transition: 1s;
+  transform: translate(5%, 170%);
+}
+
 .img-class1:hover > .img-box {
   transition: 1s;
   transform: rotate(0deg);
@@ -141,7 +196,7 @@ body {
 .destination {
   width: 100px;
   height: 80px;
-  margin-left: 90%;
+  margin-left: 80%;
   margin-top: 5%;
   position: absolute;
 }
@@ -161,6 +216,14 @@ body {
   position: absolute;
 }
 
+.destination3 {
+  width: 110px;
+  height: 80px;
+  margin-left: 8%;
+  margin-top: 40%;
+  position: absolute;
+}
+
 .destination > .text {
   width: 100px;
   margin-top: 0px;
@@ -173,6 +236,13 @@ body {
   margin-top: 0px;
   margin-bottom: 0px; 
   text-shadow: 2px 3px 8px #1a1a1a;
+}
+
+.destination3 > .text {
+  width: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  text-shadow: 2px 3px 8px #3b3b3b;
 }
 
 .sky-svg {
@@ -237,12 +307,12 @@ body {
   }
 
   .destination {
-    margin-left: 75vw;
+    margin-left: 80vw;
     margin-top: 3rem;
   }
   .destination2 {
     margin-left: 8vw;
-    margin-top: 5rem;
+    margin-top: 3%;
   }
 
   .path {
@@ -282,7 +352,7 @@ body {
   }
 
   .destination {
-    margin-left: 65%;
+    /* margin-left: 80%; */
     margin-top: 8%;
   }
 
