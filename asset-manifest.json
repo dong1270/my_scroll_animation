@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my_scroll_animation/static/css/main.c3fc1985.css",
+    "main.js": "/my_scroll_animation/static/js/main.9418653c.js",
+    "static/js/488.b44d04be.chunk.js": "/my_scroll_animation/static/js/488.b44d04be.chunk.js",
+    "index.html": "/my_scroll_animation/index.html",
+    "main.c3fc1985.css.map": "/my_scroll_animation/static/css/main.c3fc1985.css.map",
+    "main.9418653c.js.map": "/my_scroll_animation/static/js/main.9418653c.js.map",
+    "488.b44d04be.chunk.js.map": "/my_scroll_animation/static/js/488.b44d04be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3fc1985.css",
+    "static/js/main.9418653c.js"
+  ]
+}
